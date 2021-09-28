@@ -59,7 +59,7 @@ contract('TokenFarm', ([owner, investor]) => {
     describe('Token Farm deployment', async () => {
         it('has a name', async () => {
             const name = await tokenFarm.name();
-            assert.equal(name, 'Dapp Token Farm')
+            assert.equal(name, 'TokenSwap Token Farm')
         })
 
         //test to see if transfer of all dapp tokens to token farm was complete
@@ -89,7 +89,7 @@ contract('TokenFarm', ([owner, investor]) => {
             result = await daiToken.balanceOf(tokenFarm.address);
             assert.equal(result.toString(), tokens('100'), 'Token farm wallet balance correct after staking');
 
-            //check stakingBalance after investor has staked
+            // //check stakingBalance after investor has staked
             result = await tokenFarm.stakingBalance(investor);
             assert.equal(result.toString(), tokens('100'), 'investor stakingBalance correct after staking');
 
@@ -103,7 +103,7 @@ contract('TokenFarm', ([owner, investor]) => {
             // check balances after issuance
             // balance of dappToken the investor has after staking 100 dai tokens
             result = await dappToken.balanceOf(investor);
-            assert.equal(result.toString(), tokens('100'), 'investor DApp wallet balance correct after issuance');
+            assert.equal(result.toString(), tokens('10'), 'investor DApp wallet balance correct after issuance');
 
             //Ensure only the owner acan issue tokens
             await tokenFarm.issueTokens({from: investor}).should.be.rejected;

@@ -5,7 +5,7 @@ import "./DappToken.sol";
 
 contract TokenFarm {
     //All code goes here
-    string public name = "Dapp Token Farm"; //state variable
+    string public name = "TokenSwap Token Farm"; //state variable
     DappToken public dappToken; //saved as types in this state variables
     DaiToken public daiToken;
     address public owner;
