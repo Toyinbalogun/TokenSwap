@@ -5,7 +5,7 @@
 <h2 align="center">TokenSwap</h2>
 
 <h3 align="center">
- Tools: Chai.js, Mocha.js, Ganache, React, Smart contracts(Ethereum Blockchain), Solidity, Truffle, Web3.js
+ Tools: Chai.js, Ganache, Mocha.js, React, Smart contracts(Ethereum Blockchain), Solidity, Truffle, Web3.js
 </h3>
 <br />
 </p>
