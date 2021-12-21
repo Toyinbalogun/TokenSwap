@@ -31,7 +31,7 @@ I want to be able to stake and unstake tokens/coins.
 So that I can earn interest on my investments.
 ```
 ## Deployed Version
-Currently working on project, to see a deployed version click link--> https://carleton-meetups-app.herokuapp.com/
+Currently working on project...
 
 ## Demo
 
